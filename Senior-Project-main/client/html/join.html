@@ -1,0 +1,53 @@
+<!--Send user here first to enter room name/password and username-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../css/join.css">
+    <title>Join Room</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="list-navigation">
+            <span>
+                <li><a href="../html/index.html" id="logo"><img src="../images/favicon.ico" alt="Logo" width="38px"
+                            height="38px"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="createRoom.html">Create Room</a></li>
+            </span>
+            <span class="right-flexbox">
+                <li><a href="../html/AboutUs.html">About Us</a></li>
+                <li><a href="../html/contact.html">Contact Us</a></li>
+            </span>
+        </ul>
+    </nav>
+
+    <div class="center-div"> <!-- Centers the whole form in the middle of the page -->
+        <main id="join-form-div" class="container">
+            <div class="container-child">
+                <h1 class="center-text">Join</h1>
+                <form id="join" class="form-join" action="../html/chat.html">
+                    <label for="name" class="for-label">Enter Username</label>
+                    <input type="text" id="name" class="form-text-input" maxlength="20" placeholder="Your name"
+                        size="25" autocomplete="off" required>
+                    <span id="user-status" class="display-none"></span> <!-- Initially hidden -->
+                    <br>
+                    <label for="room" class="for-label">Enter Room Name</label>
+                    <input type="text" id="room" class="form-text-input" placeholder="Enter a room id" size="25"
+                        autocomplete="off" required>
+                    <span id="room-status" class="display-none"></span> <!--  Initially hidden-->
+                    <br>
+                    <button class="button-class shift-content-right">Enter Room</button>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="../js/join.js" type="application/javascript"></script>
+</body>
+
+</html>

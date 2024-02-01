@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8;base64">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../css/chat.css">
+    <title>Samvaad Chat</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="list-navigation">
+            <span>
+                <li><a href="../html/index.html" id="logo"><img src="../images/favicon.ico" alt="Logo" width="38px"
+                            height="38px"></a></li>
+                <li><a href="index.html">Home</a></li>
+            </span>
+            <span class="right-flexbox">
+                <li><a href="join.html" target="_blank">Join Another Room</a></li>
+                <li class="red-text"><a href="../html/index.html">Leave</a></li>
+            </span>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="chat-info" style="float:left">
+            <form class="join-form">
+                <input type="text" id="name" maxlength="20" placeholder="Your name" size="20" required>
+                <input type="text" id="room" maxlength="20" placeholder="Chat room" size="20" required>
+                <button id="join" type="submit">Join</button>
+            </form>
+            <div id="info-panel">
+                <p id="display-room-name"></p>
+                <ul id="user-list"></ul>
+                <div>
+                    <img id="qrcode" src="" alt="QRCode">
+                </div>
+                <!-- <p class="room-list">Rooms</p> -->
+            </div>
+        </div>
+
+        <div id="chat-screen">
+            <div id="messages">
+            </div>
+        </div>
+        <p class="activity"></p>
+        <div id="send-message">
+            <form id="inputMessage" action="">
+                <input id="input" autocomplete="off" />
+                <button>Send</button>
+            </form>
+        </div>
+    </main>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="../js/chat.js" type="application/javascript"></script>
+</body>
+
+</html>

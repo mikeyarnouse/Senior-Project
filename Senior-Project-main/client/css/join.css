@@ -1,0 +1,143 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: lightgrey;
+    margin: auto;
+    height: 100%;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-image: url("../images/join_page_backround.jpg");
+    background-size: cover;
+}
+
+/* Navigation */
+nav {
+    max-height: 38px;
+    min-height: 38px;
+    background-color: rgb(59, 143, 192);
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.list-navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    display: flex;
+}
+
+.right-flexbox {
+    margin-left: auto;
+}
+
+li {
+    display: flex;
+    font-weight: bold;
+    float: left;
+    min-height: 38px;
+}
+
+a:not(#logo) {
+    padding: 8px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+li a:visited {
+    color: black;
+}
+
+li a:hover {
+    background-color: rgb(32, 78, 105);
+    color: white;
+    /* box-shadow: inset 0px 0px 0px 1px black; */
+}
+
+/* Centered Form */
+.center-div {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    transform: translate(0, 8vh);
+    position: absolute;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.container-child {
+    padding: 20px;
+    /* border: 2px solid black; */
+    border-radius: 12px;
+    box-shadow: 0 0 1rem 0 rgb(0, 0, 0, .2);
+    min-width: 28rem;
+    background-color: rgb(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+}
+
+.center-text {
+    text-align: center;
+}
+
+.lightgray-backround {
+    background-color: lightgray;
+}
+
+.display-none {
+    display: none;
+}
+
+.visibility-none {
+    visibility: hidden;
+}
+
+.button-class {
+    padding: 0px 10px 0px 10px;
+    min-width: 60px;
+    min-height: 30px;
+} 
+
+.form-text-input {
+    min-width: 100%;
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 8px 6px 8px 6px; 
+    margin-bottom: 10px;
+}
+
+.shift-content-right{
+    float: right;
+}
+
+.available {
+    font-family: serif;
+    display: block;
+    color: darkgreen;
+}
+
+.unavailable {
+    font-family: serif;
+    display: block;
+    color: darkred;
+}
+
+.for-label {
+    display: block;
+    padding: 0px 0px 4px 4px;
+}

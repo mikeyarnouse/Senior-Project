@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../css/createRoom.css">
+    <title>Create Room</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="list-navigation">
+            <span>
+                <li><a href="../html/index.html" id="logo"><img src="../images/favicon.ico" alt="Logo" width="38px"
+                            height="38px"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="join.html">Join Room</a></li>
+            </span>
+            <span class="right-flexbox">
+                <li><a href="../html/AboutUs.html">About Us</a></li>
+                <li><a href="../html/contact.html">Contact Us</a></li>
+            </span>
+        </ul>
+    </nav>
+
+    <div class="center-div">
+        <main class="container">
+            <div id="create-room-div" class="container-child">
+                <h1 class="center-text">Create a Room</h1>
+                <form id="create-room-form">
+                    <label for="room-name" class="for-label">Create a Room Name</label>
+                    <input type="text" id="room-name" class="form-text-input" maxlength="20" placeholder="Room Name"
+                        size="25" autocomplete="off" required>
+                    <span id="room-status" class="display-none">Room Status</span> <!-- Initially hidden -->
+                    <br>
+                    <label for="max-capacity" class="for-label">Enter Max Capacity</label>
+                    <input type="number" id="max-capacity" class="form-text-input" maxlength="2"
+                        placeholder="Max Capacity 1-99" value="" min="1" max="99" step="1" size="25" autocomplete="off"
+                        required> <br>
+                    <button id="submit-button"
+                        class="button-class shift-content-right shift-content-bottom">Next</button>
+                </form>
+            </div>
+            <div id="join-room-div" class="container-child display-none"> <!-- Initially hidden -->
+                <h1>Enter Username</h1>
+                <form id="join-room-form" action="../html/chat.html">
+                    <label for="user-name" class="for-label">Enter Username</label>
+                    <input type="text" id="user-name" class="form-text-input" maxlength="20" placeholder="Your Username"
+                        size="25" autocomplete="off" required> <br>
+                    <div class="shift-content-right">
+                        <button class="button-class">Create and Join Room</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="../js/createRoom.js" type="application/javascript"></script>
+</body>
+
+</html>
